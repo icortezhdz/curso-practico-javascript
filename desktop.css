@@ -1,0 +1,21 @@
+.c1{
+    order: 1;
+}
+.c2{
+    order: 3;
+}
+.c3{
+    order: 2;
+}
+.section1{
+    width: 33%;
+    order: 1;
+}
+.section2{
+    width: 34%;
+    order: 2;
+}
+.section3{
+    width: 33%;
+    order: 3;
+}

@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 6.25%;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    font-size: 16rem;
+    height: 100vh;;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+    padding: 10rem;
+    background-color: #12203d;
+    color: white;
+    box-shadow: 0 0 10rem 5rem #0e192f;
+    position: relative;
+}
+header h1{
+    color: rgb(174, 218, 0);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #12203d;
+    padding: 15rem 0;
+    width: 100%;
+    height: auto;
+}
+h1{
+    font-weight: 900;
+    margin: 10rem auto;
+}
+section{
+    
+    width: 100%;
+}
+.card{
+    width: 500rem;
+    height: auto;
+    border-radius: 15rem;
+    margin: 15rem auto;
+    overflow: hidden;
+    background-color: #334b70;
+}
+.card_header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80rem;
+    background-color: rgb(174, 218, 0);
+}
+.card_header picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+}
+.card_header picture img{
+    width: 100%;
+    height: 70%;
+    object-fit:contain;
+}
+.card_header div{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h2{
+    font-weight: 700;
+}
+.card_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card_content span{
+    font-weight: 500;
+    margin: 15rem 0;
+    color: white;
+}
+.inp_figura{
+    width: 100rem;
+    height: 40rem;
+    border: none;
+    border-radius: 5rem;
+    outline: none;
+    padding: 0 10rem
+}
+.btn{
+    width: 100rem;
+    height: 40rem;
+    border: none;
+    margin: 0 10rem;
+    border-radius: 5rem;
+    background-color: rgb(109, 170, 255);
+    box-shadow: 0 5rem 5rem 0.5rem #2c3c5c;
+    color: white;
+}
+.btn:hover{
+    background-color: rgb(102, 157, 235);
+}
+.resultados{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15rem 0;
+    margin-top: 20rem;
+    width: 100%;
+    color: white;
+    background-color: rgb(109, 170, 255);
+}
+.res_perimetro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #3b80e7;
+    width: 50%;
+}
+.res_perimetro h3{
+    margin-left: 5rem;
+}
+.res_area{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+}
+.res_area h3{
+    margin-left: 5rem;
+}
+
+.medidas_triangulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card_content--inputs{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    margin-bottom: 15rem;
+}
+.card_content--inputs p{
+    margin-bottom: 5rem;
+}
+.btnTriangulo{
+    width: 461rem;
+}

@@ -1,0 +1,25 @@
+main{
+    flex-wrap: wrap;
+    flex-direction: row;
+    min-height: 85vh;
+}
+.card{
+    width: 400rem;
+}
+.btnTriangulo{
+    width: 369rem;
+}
+.inp_figura{
+    width: 80rem;
+}
+.section1{
+    width: 50%;
+    order: 1;
+}
+.section2{
+    order: 3;
+}
+.section3{
+    width: 50%;
+    order:2;
+}

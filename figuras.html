@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--styles-->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./tablet.css" media="screen and (min-width: 880px)">
+    <link rel="stylesheet" href="./desktop.css" media="screen and (min-width: 1300px)">
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <title>Figuras geométricas | Curso Platzi</title>
+</head>
+<body>
+    <header>
+        <h1>Figuras geométricas</h1>
+        <p>Éste es el primer taller del curso práctico de JavaScript</p>
+    </header>
+    <main>
+
+<!--Form para cuadrado-->
+        <section class="section1">
+            <div class="card c1">
+                <div class="card_header">
+                    <picture>
+                       <img src="http://pngimg.com/uploads/square/square_PNG19.png" alt="cuadrado">
+                    </picture>
+                    <div>
+                        <span>Calcula el área y perímetro de un</span>
+                        <h2>Cuadrado</h2> 
+                    </div>
+                </div>
+    
+                <div class="card_content">
+                    <span>Ingresa la medida de un lado del cuadrado:</span>
+    
+                    <div>
+                        <input type="number" name="" id="inp_cuadrado" class="inp_figura">
+                    
+                        <input type="button" onclick="calcularCuadrado()" value="Calcular" class="btn">
+                    </div>
+                   
+                </div>
+    
+                <div class="resultados">
+                    <div class="res_perimetro">
+                        <span> Perímetro: </span>
+                        <h3 id="p_cuadrado">0 cm.</h3>
+                    </div>
+                    <div class="res_area">
+                        <span> Área: </span>
+                        <h3 id="a_cuadrado">0 cm2.</h3>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+<!--Form para triangulo-->
+        <section class="section2">
+            <div class="card c2">
+                <div class="card_header">
+                    <picture>
+                       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Regular_triangle.svg/2048px-Regular_triangle.svg.png" alt="triangulo">
+                    </picture>
+                    <div>
+                        <span>Calcula el área y perímetro de un</span>
+                        <h2>Triángulo</h2> 
+                    </div>
+                </div>
+    
+                <div class="card_content">
+                    <span>Ingresa las medidas del triángulo:</span>
+    
+                    <div class="card_content--inputs">
+                        <label for="" class="medidas_triangulo">
+                            <p>Lado 1:</p>
+                            <input type="number" name="" id="inp_triangulo_lado1" class="inp_figura">
+                        </label>
+                        <label for="" class="medidas_triangulo">
+                            <p>Lado 2:</p>
+                            <input type="number" name="" id="inp_triangulo_lado2" class="inp_figura">
+                        </label>
+                        <label for="" class="medidas_triangulo">
+                            <p>Base:</p>
+                            <input type="number" name="" id="inp_triangulo_base" class="inp_figura">
+                        </label>
+                        <label for="" class="medidas_triangulo">
+                            <p>Altura:</p>
+                            <input type="number" name="" id="inp_triangulo_h" class="inp_figura">
+                        </label>
+                    </div>
+    
+                    <input type="button" onclick="calcularTriangulo()" value="Calcular" class="btn btnTriangulo ">
+    
+                </div>  
+    
+               <div class="resultados">
+                    <div class="res_perimetro">
+                        <span> Perímetro: </span>
+                        <h3 id="p_triangulo">0 cm.</h3>
+                    </div>
+                    <div class="res_area">
+                        <span> Área: </span>
+                        <h3 id="a_triangulo">0 cm2.</h3>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+<!--Form para círculo-->
+        <section class="section3">
+            <div class="card c3">
+                <div class="card_header">
+                    <picture>
+                       <img src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Circle_file.487.png" alt="circulo">
+                    </picture>
+                    <div>
+                        <span>Calcula el área y perímetro de un</span>
+                        <h2>Círculo</h2> 
+                    </div>
+                </div>
+        
+                <div class="card_content">
+                    <span>Ingresa las medidas del círculo:</span>
+        
+                        <div>
+                            <input type="number" name="" id="inp_circulo" class="inp_figura">
+                        
+                            <input type="button" onclick="calcularCirculo()" value="Calcular" class="btn">
+                        </div>
+                </div>  
+        
+               <div class="resultados">
+                    <div class="res_perimetro">
+                        <span> Perímetro: </span>
+                        <h3 id="c_circulo">0 cm.</h3>
+                    </div>
+                    <div class="res_area">
+                        <span> Área: </span>
+                        <h3 id="a_circulo">0 cm2.</h3>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        
+    </main>
+    
+
+    <script src="./figuras.js"></script>
+</body>
+</html>
