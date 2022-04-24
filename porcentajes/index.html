@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Styles CSS-->
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./desktop.css" media="screen and (min-width: 680px)">
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    
+    <title>Porcentajes y descuentos</title>
+</head>
+<body>
+    <header>
+        <h1>Porcentajes y descuentos</h1>
+    </header>
+        
+    <main>
+        <section class="section1">
+            <div class="card">
+
+                <div class="card_header">
+                    <h3>Calcula el precio con descuento:</h3>
+                </div>
+
+                <form class="card_content">
+                    <label for="inp_precio" class="form">
+                        <span>Ingresa el precio:</span>
+                        <input type="number" id="inp_precio">
+                    </label>
+                    <label for="inp_descuento" class="form">
+                        <span>Ingresa el porcentaje de descuento:</span>
+                        <input type="number" id="inp_descuento">
+                    </label>
+                    <label for="inp_codigo" class="form">
+                        <span>Agregar código de descuento:</span>
+                        <input type="text" id="inp_codigo">
+                    </label>
+                    <input type="button" value="Calcular" class="card_btn" onclick="calcular_precio()">
+                    <h3 id="resultado" class="card_resultado">$ 0.00</h3>
+                </form>
+
+            </div>
+        </section>
+
+        <section class="section2">
+            <div class="off">
+                <div class="off_header">
+                    <h3>Códigos de descuento</h3>
+                    <picture><img src="https://icon-library.com/images/sale-png-icon/sale-png-icon-13.jpg" alt="off"></picture>
+                </div>
+                <div class="off_codigos">
+                    <div class="off_codigos_encabezado codigos">
+                        <span>Código</span>
+                        <span>Descuento</span>
+                    </div>
+                    <div class="codigos">
+                        <span>MRL10</span>
+                        <span>-10%</span>
+                    </div>
+                    <div class="codigos">
+                        <span>LIN15</span>
+                        <span>-15%</span>
+                    </div>
+                    <div class="codigos">
+                        <span>ALB20</span>
+                        <span>-20%</span>
+                    </div>
+                    <div class="codigos">
+                        <span>AMZ25</span>
+                        <span>-25%</span>
+                    </div>
+                    <div class="codigos">
+                        <span>EBY30</span>
+                        <span>-30%</span>
+                    </div>
+                </div>
+    
+            </div>
+        </section> 
+    </main>
+    <script src="./descuentos.js"></script>
+</body>
+</html>
