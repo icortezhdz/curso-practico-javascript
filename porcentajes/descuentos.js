@@ -8,6 +8,7 @@ function precio_nuevo(precio, descuento, codigo){
 }
 
 //Interacción con HTML
+//Creamos una variable 'validacion' y le asignamos el array 'cupones' con el metodo .find. El cual recorrerá todo el array hasta encontrar la primera coincidencia con la variable 'cuponIngresado'.
 const codigos = {
     'MRL10' : 10,
     'LIN15' : 15,
